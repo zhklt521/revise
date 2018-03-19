@@ -24,4 +24,15 @@ public class SortServiceTest extends AbstractTest {
         sortService.arrayBubble(arry);
         System.out.println(JsonUtils.toJsonString(arry));
     }
+
+    @Test
+    public void testQuickSort(){
+        int[] arry = {21, 18, 36, 14, 48, 30, 65, 53};
+
+        System.out.println("排序前：");
+        System.out.println(JsonUtils.toJsonString(arry));
+        System.out.println("排序后：");
+        sortService.quickSort(arry);
+        System.out.println(JsonUtils.toJsonString(arry));
+    }
 }
